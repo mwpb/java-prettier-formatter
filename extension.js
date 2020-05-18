@@ -1,3 +1,4 @@
+
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require("vscode");
@@ -10,12 +11,7 @@ const prettier = require("prettier");
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-
-  vscode.commands.registerCommand('java-prettier-formatter.format', () => {
-    vscode.window.showErrorMessage("RUN");
-  });
-
-  vscode.languages.registerDocumentFormattingEditProvider(
+  let disposable = vscode.languages.registerDocumentFormattingEditProvider(
     "java",
     {
       provideDocumentFormattingEdits(document) {
@@ -41,8 +37,10 @@ function activate(context) {
         return [];
       },
     }
-  )
-;}
+  );
+
+  context.subscriptions.push(disposable);
+}
 exports.activate = activate;
 
 // this method is called when your extension is deactivated
