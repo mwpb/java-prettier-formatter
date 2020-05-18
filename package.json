@@ -3,7 +3,7 @@
   "name": "java-prettier-formatter",
   "displayName": "Java prettier formatter",
   "description": "Formats Java using the Prettier formatter.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.45.0"
   },
