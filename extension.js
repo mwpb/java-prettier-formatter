@@ -10,7 +10,7 @@ const prettier = require("prettier");
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-  let disposable = vscode.languages.registerDocumentFormattingEditProvider(
+  vscode.languages.registerDocumentFormattingEditProvider(
     "java",
     {
       provideDocumentFormattingEdits(document) {
@@ -36,10 +36,8 @@ function activate(context) {
         return [];
       },
     }
-  );
-
-  context.subscriptions.push(disposable);
-}
+  )
+;}
 exports.activate = activate;
 
 // this method is called when your extension is deactivated

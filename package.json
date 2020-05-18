@@ -16,7 +16,8 @@
     "formatter"
   ],
   "activationEvents": [
-    "onLanguage:java"
+    "onLanguage:java",
+    "workspaceContains:**/pom.xml"
   ],
   "main": "./extension.js",
   "preview": true,
