@@ -10,6 +10,11 @@ const prettier = require("prettier");
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+
+  vscode.commands.registerCommand('java-prettier-formatter.format', () => {
+    vscode.window.showErrorMessage("RUN");
+  });
+
   vscode.languages.registerDocumentFormattingEditProvider(
     "java",
     {

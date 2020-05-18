@@ -16,8 +16,7 @@
     "formatter"
   ],
   "activationEvents": [
-    "onLanguage:java",
-    "workspaceContains:**/pom.xml"
+    "onLanguage:java"
   ],
   "main": "./extension.js",
   "preview": true,
@@ -37,7 +36,13 @@
           "java"
         ]
       }
-    ]
+    ],
+    "commands": [
+      {
+          "command": "java-prettier-formatter.format",
+          "title": "Format Java file"
+      }
+  ]
   },
   "license": "MIT",
   "scripts": {
