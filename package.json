@@ -22,7 +22,7 @@
   "preview": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/vscode-wordcount.git"
+    "url": "https://github.com/mwpb/java-prettier-formatter"
   },
   "icon": "prettier-avatar-dark.png",
   "contributes": {
