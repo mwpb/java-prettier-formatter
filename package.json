@@ -18,13 +18,13 @@
   "activationEvents": [
     "onLanguage:java"
   ],
-	"main": "./extension.js",
-	"preview": true,
-	"repository": {
+  "main": "./extension.js",
+  "preview": true,
+  "repository": {
     "type": "git",
     "url": "https://github.com/Microsoft/vscode-wordcount.git"
   },
-	"icon": "prettier-avatar-dark.png",
+  "icon": "prettier-avatar-dark.png",
   "contributes": {
     "languages": [
       {
@@ -45,15 +45,17 @@
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.45.0",
     "@types/glob": "^7.1.1",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.11.0",
+    "@types/vscode": "^1.45.0",
     "eslint": "^6.8.0",
     "glob": "^7.1.6",
     "mocha": "^7.1.2",
     "typescript": "^3.8.3",
-    "vscode-test": "^1.3.0"
+    "vscode-test": "^1.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "prettier": "^2.0.5",
