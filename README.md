@@ -29,7 +29,7 @@ into the `[java]` section.
 
 ## Acknowledgments
 
-This package completes the 'last yard' to use Prettier with Java files in VS Code.
+This package completes the 'last yard' to use Prettier with Java files in VS Code in a standalone way.
 The hard work and credit is due to:-
 
 * [Prettier](https://prettier.io/) - Formatter.
