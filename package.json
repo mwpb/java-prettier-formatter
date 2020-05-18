@@ -1,0 +1,62 @@
+{
+  "publisher": "mwpb",
+  "name": "java-prettier-formatter",
+  "displayName": "Java prettier formatter",
+  "description": "Formats Java using the Prettier formatter.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "keywords": [
+    "prettier",
+    "Java",
+    "formatter"
+  ],
+  "activationEvents": [
+    "onLanguage:java"
+  ],
+	"main": "./extension.js",
+	"preview": true,
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-wordcount.git"
+  },
+	"icon": "prettier-avatar-dark.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "java",
+        "aliases": [
+          "Java"
+        ],
+        "extensions": [
+          "java"
+        ]
+      }
+    ]
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.45.0",
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.0",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.1.2",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0"
+  },
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "prettier-plugin-java": "^0.8.0"
+  }
+}
