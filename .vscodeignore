@@ -6,10 +6,4 @@ vsc-extension-quickstart.md
 **/jsconfig.json
 **/*.map
 **/.eslintrc.json
-
-.vscode
-node_modules
-out/
-src/
-tsconfig.json
-webpack.config.js
+.cache/
