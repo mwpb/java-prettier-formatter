@@ -11,7 +11,7 @@ Install via the VS Code marketplace.
 For one time use:-
 
 * Open the Command Palette (ctrl+shift+p).
-* Select 'Format Document With...'.
+* Select 'Format Document With...' or 'Format Document' if this formatter is the only Java formatter installed.
 * Select 'Java prettier formatter'.
 
 To set as default formatter for Java files:-
