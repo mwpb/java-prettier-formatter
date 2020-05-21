@@ -19,7 +19,7 @@
     "onLanguage:java"
   ],
   "main": "./extension.js",
-  "preview": true,
+  "preview": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/mwpb/java-prettier-formatter"
