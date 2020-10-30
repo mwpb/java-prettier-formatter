@@ -14,11 +14,12 @@ function activate(context) {
   let disposable = vscode.languages.registerDocumentFormattingEditProvider(
     "java",
     {
-      provideDocumentFormattingEdits(document) {
+      async provideDocumentFormattingEdits(document) {
         const text = document.getText();
+        const options = await prettier.resolveConfig(document.fileName);
         const formattedText = prettier.format(text, {
-          parser: "java",
-          tabWidth: 2,
+          ...options,
+          parser: "java"
         });
 
         let textEditor = vscode.window.activeTextEditor;
