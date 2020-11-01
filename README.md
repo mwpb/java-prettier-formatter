@@ -31,6 +31,13 @@ Then the formatter should be available with `Alt+Shift+f` on windows and `Ctrl+S
 ## Configuration
 
 Place a `.prettierrc` in your workspace.
+Changes require restart to take effect.
+
+## Summary of deploy process
+
+* `npm i -g vsce`
+* `vsce package`
+* `vsce publish`
 
 ## Acknowledgments
 
