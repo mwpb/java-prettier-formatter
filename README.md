@@ -28,6 +28,10 @@ To set as default formatter for Java files:-
 into the `[java]` section.
 Then the formatter should be available with `Alt+Shift+f` on windows and `Ctrl+Shift+i1 on Linux.
 
+## Configuration
+
+Place a `.prettierrc` in your workspace.
+
 ## Acknowledgments
 
 This package completes the 'last yard' to use Prettier with Java files in VS Code in a standalone way.
