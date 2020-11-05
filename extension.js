@@ -16,7 +16,9 @@ function activate(context) {
     {
       async provideDocumentFormattingEdits(document) {
         const text = document.getText();
-        const options = await prettier.resolveConfig(document.fileName);
+        const options = await prettier.resolveConfig(document.fileName, {
+          editorconfig: true,
+        });
         const formattedText = prettier.format(text, {
           ...options,
           parser: "java"

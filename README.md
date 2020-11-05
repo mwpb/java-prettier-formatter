@@ -31,6 +31,7 @@ Then the formatter should be available with `Alt+Shift+f` on windows and `Ctrl+S
 ## Configuration
 
 Place a `.prettierrc` in your workspace.
+(Or alternatively an appropriate `.editorconfig`.)
 Changes require restart to take effect.
 
 ## Summary of deploy process
