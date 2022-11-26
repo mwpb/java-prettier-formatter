@@ -24,20 +24,14 @@ function activate(context) {
           parser: "java"
         });
 
-        let textEditor = vscode.window.activeTextEditor;
-        if (textEditor) {
-          let firstLine = textEditor.document.lineAt(0);
-          let lastLine = textEditor.document.lineAt(
-            textEditor.document.lineCount - 1
-          );
-          let textRange = new vscode.Range(
-            firstLine.range.start,
-            lastLine.range.end
-          );
+        let firstLine = document.lineAt(0);
+        let lastLine = document.lineAt(document.lineCount - 1);
+        let textRange = new vscode.Range(
+          firstLine.range.start,
+          lastLine.range.end
+        );
 
-          return [vscode.TextEdit.replace(textRange, formattedText)];
-        }
-        return [];
+        return [vscode.TextEdit.replace(textRange, formattedText)];
       },
     }
   );
