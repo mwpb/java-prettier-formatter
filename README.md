@@ -1,4 +1,6 @@
-# Java prettier formatter
+# [UNMAINTAINED] Java prettier formatter
+
+Warning: this extension is effectively unmaintained as the original author hasn't used Java for several years now. PRs and issues may linger for a while! For an alternative option, you may try the advice contained [here](https://github.com/jhipster/prettier-java/blob/main/docs/advanced_usage.md). If you'd like to maintain this extension please contact `mwpb` or write in the issue tracker. Thanks again to all past contributors!
 
 A formatter for Java files that uses the Prettier formatter.
 
