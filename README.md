@@ -2,6 +2,8 @@
 
 Warning: this extension is effectively unmaintained as the original author hasn't used Java for several years now. PRs and issues may linger for a while! For an alternative option, you may try the advice contained [here](https://github.com/jhipster/prettier-java/blob/main/docs/advanced_usage.md). If you'd like to maintain this extension please contact `mwpb` or write in the issue tracker. Thanks again to all past contributors!
 
+Update: on 2024-03-26 Microsoft VS Marketplace support emailed me about fixing a 'copyright infringement' claim from Oracle because the name of this extension began with the word `Java`. Regardless of the validity of this claim I have pulled the extension from the marketplace as I don't have time to keep up its maintenance. I leave the code here in case someone would like to fork and keep going.
+
 A formatter for Java files that uses the Prettier formatter.
 
 ## Installation
